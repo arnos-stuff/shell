@@ -75,7 +75,3 @@ jlenv () {
 jlup () {
     julia -e "using Pkg; Pkg.update()"
 }
-
-
-
-. "$HOME/.cargo/env"
