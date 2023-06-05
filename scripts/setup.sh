@@ -1,6 +1,8 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-DEFAULT=../zsh/shae-ubuntu-zsh
+BASEDIR=$(dirname "$0")
+
+DEFAULT=$BASEDIR/../zsh/shae-ubuntu-zsh
 
 
 if [ -z "$1-zshrc" ]
@@ -25,4 +27,4 @@ else
 fi
 
 mkdir ~/.config/
-cp -r ../apps/micro ~/.config/
+cp -r "$BASEDIR/../apps/micro" ~/.config/
