@@ -27,4 +27,5 @@ else
 fi
 
 mkdir ~/.config/
-cp -r "$BASEDIR/../apps/micro" ~/.config/
+echo "$BASEDIR"
+cp -r "$BASEDIR/apps/micro" ~/.config/
