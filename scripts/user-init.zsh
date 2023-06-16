@@ -1,23 +1,8 @@
 #!/bin/sh
 
-if [ "$#" -lt 1 ]; then
-    echo "Usage: $0 <username>"
-    exit 1
-fi
-
-USERNAME=$1
-
-# add user
-
-useradd -m -G wheel,docker,sudo $USERNAME
-
-# set password
-
-passwd $USERNAME
-
 # set shell
 
-chsh -s /bin/zsh $USERNAME
+chsh -s /bin/zsh $USER
 
 # install packages
 
