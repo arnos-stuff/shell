@@ -11,6 +11,12 @@ sudo chmod +x ./fonts.sh
 
 sudo ./fonts.sh
 
+cp ./scripts/hyperjs.sh .
+
+chmod +x hyperjs.sh
+
+sudo ./hyperjs.sh
+
 cp ./scripts/gcloud.sh .
 
 sudo chmod +x gcloud.sh
