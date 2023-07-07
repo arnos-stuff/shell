@@ -17,8 +17,13 @@ chmod +x hyperjs.sh
 
 sudo ./hyperjs.sh
 
+mkdir $HOME/.config
+
+cp ./starship/half-pure.toml .config/starship.toml
+
 cp ./scripts/gcloud.sh .
 
 sudo chmod +x gcloud.sh
 
 sudo ./gcloud.sh
+
