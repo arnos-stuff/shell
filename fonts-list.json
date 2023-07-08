@@ -1,0 +1,50 @@
+[
+    {
+        "Name":  "jetbrains-mono",
+        "Website":  "https://www.jetbrains.com/lp/mono/",
+        "Description":  "            JetBrains Mono’s typeface forms are simple and free from unnecessary details. Rendered in small sizes, the text looks crisper.\nThe easier the forms, the faster the eye perceives them and the less effort the brain needs to process them.",
+        "Uri":  "https://download.jetbrains.com/fonts/JetBrainsMono-2.304.zip?_gl=1*1jyrilq*_ga*MTg0NjA1MDQ3NS4xNjgzNzI0MjMx*_ga_9J976DJZ68*MTY4MzcyNDIzMS4xLjEuMTY4MzcyNDM1MC42MC4wLjA.\u0026_ga=2.23088563.846408337.1683724231-1846050475.1683724231"
+    },
+    {
+        "Name":  "fira-code",
+        "Website":  "https://github.com/tonsky/FiraCode",
+        "Description":  "            \nFira Code is a free monospaced font containing ligatures for common programming multi-character combinations.\nThis is just a font rendering feature: underlying code remains ASCII-compatible.\nThis helps to read and understand code faster. For some frequent sequences like .. or //, ligatures allow us to correct spacing.\nThe most famous font, genre-defining. A must have.",
+        "Uri":  "https://github.com/tonsky/FiraCode/releases/download/6.2/Fira_Code_v6.2.zip"
+    },
+    {
+        "Name":  "iosevka-base",
+        "Website":  "https://typeof.net/Iosevka/",
+        "Description":  "            Iosevka is an open-source, sans-serif + slab-serif, monospace + quasi‑proportional typeface family,\ndesigned for writing code, using in terminals, and preparing technical documents.",
+        "Uri":  "https://github.com/be5invis/Iosevka/releases/download/v22.1.1/super-ttc-iosevka-22.1.1.zip"
+    },
+    {
+        "Name":  "iosevka-aile",
+        "Website":  "https://typeof.net/Iosevka/",
+        "Description":  "Iosevka is an open-source, sans-serif + slab-serif, monospace + quasi‑proportional typeface family, designed for writing code, using in terminals, and preparing technical documents.",
+        "Uri":  "https://github.com/be5invis/Iosevka/releases/download/v22.1.1/super-ttc-iosevka-aile-22.1.1.zip"
+    },
+    {
+        "Name":  "iosevka-curly",
+        "Website":  "https://typeof.net/Iosevka/",
+        "Description":  "        Iosevka is an open-source, sans-serif + slab-serif, monospace + quasi‑proportional typeface family, designed for writing code, using in terminals, and preparing technical documents.",
+        "Uri":  "https://github.com/be5invis/Iosevka/releases/download/v22.1.1/super-ttc-iosevka-curly-22.1.1.zip"
+    },
+    {
+        "Name":  "hasklig",
+        "Website":  "https://github.com/i-tu/Hasklig",
+        "Description":  "Programming languages are limited to relatively few characters. As a result, combined character operators surfaced quite early, such as the widely used arrow (-\u003e), comprised of a hyphen and greater sign. It looks like an arrow if you know the analogy and squint a bit.\n\nComposite glyphs are problematic in languages such as Haskell which utilize these complicated operators (=\u003e -\u003c \u003e\u003e= etc.) extensively. The readability of such complex code improves with pretty printing. Academic articles featuring Haskell code often use lhs2tex to achieve an appealing rendering, but it is of no use when programming.\n\nSome Haskellers have resorted to Unicode symbols (⇒, ← etc.), which are valid in the ghc. However they are one-character-wide and therefore eye-strainingly small. Furthermore, when displayed as substitutes to the underlying multi-character representation, as vim2hs does, the characters go out of alignment.\n\nHasklig solves the problem the way typographers have always solved ill-fitting characters which co-occur often: ligatures. The underlying code stays the same — only the representation changes.",
+        "Uri":  "https://github.com/i-tu/Hasklig/releases/download/v1.2/Hasklig-1.2.zip"
+    },
+    {
+        "Name":  "victor-mono",
+        "Website":  "https://rubjo.github.io/victor-mono/",
+        "Description":  "Victor Mono is an open-source monospaced font with optional semi-connected cursive italics and programming symbol ligatures.\nThe typeface is slender, crisp and narrow, with a large x-height and clear punctuation, making it legible and ideal for code. It comes in seven weights and Roman, Italic and Oblique styles.",
+        "Uri":  "https://rubjo.github.io/victor-mono/VictorMonoAll.zip"
+    },
+    {
+        "Name":  "ibm-plex-mono",
+        "Website":  "https://www.ibm.com/plex/",
+        "Description":  "        IBM Plex® is our new typeface. It’s global, it’s versatile and it’s distinctly IBM. When we set out to create a typeface that was unmistakably IBM, our own history was our greatest source of inspiration. IBM has always served as a medium between mankind and machine. Between the natural and the engineered. The emotional and rational. The classic and the cutting-edge. Our most important job is to help humanity and technology move forward together. IBM Plex® brings these relationships to life through letterforms.",
+        "Uri":  "https://github.com/IBM/plex/releases/download/v6.3.0/TrueType.zip"
+    }
+]
