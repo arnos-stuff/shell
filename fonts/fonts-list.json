@@ -5,6 +5,14 @@
         "description":  "            JetBrains Mono’s typeface forms are simple and free from unnecessary details. Rendered in small sizes, the text looks crisper.\nThe easier the forms, the faster the eye perceives them and the less effort the brain needs to process them.",
         "url":  "https://download.jetbrains.com/fonts/JetBrainsMono-2.304.zip?_gl=1*1jyrilq*_ga*MTg0NjA1MDQ3NS4xNjgzNzI0MjMx*_ga_9J976DJZ68*MTY4MzcyNDIzMS4xLjEuMTY4MzcyNDM1MC42MC4wLjA.\u0026_ga=2.23088563.846408337.1683724231-1846050475.1683724231"
     },
+    
+    {
+        "name":  "intel-one-mono",
+        "website":  "https://github.com/intel/intel-one-mono",
+        "description":  "Introducing Intel One Mono, an expressive monospaced font family that’s built with clarity, legibility, and the needs of developers in mind.\n\nIt’s easier to read, and available for free, with an open-source font license.\n\nIdentifying the typographically underserved low-vision developer audience, Frere-Jones Type designed the Intel One Mono typeface in partnership with the Intel Brand Team and VMLY&R, for maximum legibility to address developers' fatigue and eyestrain and reduce coding errors. A panel of low-vision and legally blind developers provided feedback at each stage of design.\n\nIntel One Mono also covers a wide range of over 200 languages using the Latin script. The Intel One Mono fonts are provided in four weights — Light, Regular, Medium, and Bold — with matching italics, and we are happy to share both an official release of fonts ready to use as well as editable sources.",
+        "url":  "https://github.com/intel/intel-one-mono/releases/download/V1.2.1/ttf.zip"
+    },
+
     {
         "name":  "fira-code",
         "website":  "https://github.com/tonsky/FiraCode",

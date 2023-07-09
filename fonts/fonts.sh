@@ -148,6 +148,7 @@ function inner_prompt {
         echo "Packing files..."
         find dist -type f -name "*.zip" -exec rm {} \;
         find dist/* -maxdepth 0 -type d -exec tar -czvf {}.tar.gz {} \;
+        mv dist/*.tar.gz .
         tar -czvf fonts.tar.gz dist
         ;;
     "load")
