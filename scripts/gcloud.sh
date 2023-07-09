@@ -27,14 +27,14 @@ function decompress_files {
     done
 }
 
+GCLOUD_DIR="google-cloud-sdk"
 
-
-cd $HOME
-
-curl -LO "https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-cli-437.0.
+curl -o "$GCLOUD_DIR.tar.gz" -sSL "https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-cli-437.0.
 1-linux-x86_64.tar.gz?hl=fr"
 
 decompress_files
+
+WORKDIR $GCLOUD_DIR
 
 echo "export PATH=\"$PATH;$HOME/google-cloud-sdk/bin\"" >> .bashrc
 
