@@ -18,3 +18,7 @@ mkdir .config
 # micro
 
 curl https://getmic.ro | bash
+
+# exa
+
+apt install exa
