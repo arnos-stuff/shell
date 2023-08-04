@@ -1,4 +1,4 @@
-ulimit -n 160000
+\ulimit -n 160000
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh --cmd fz)"
@@ -72,8 +72,8 @@ for dump in ~/.zcompdump(N.mh+24); do
     compinit; bashcompinit;
 done
 
-source $GCLOUD_CLI/completion.zsh.inc
-source $GCLOUD_CLI/path.zsh.inc
+[ -s "$GCLOUD_CLI/completion.zsh.inc" ] && \.  $GCLOUD_CLI/completion.zsh.inc
+[ -s "$GCLOUD_CLI/completion.zsh.inc" ] && \.  $GCLOUD_CLI/path.zsh.inc
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "/home/linuxbrew/.linuxbrew/opt/nvm/nvm.sh" ] && \. "/home/linuxbrew/.linuxbrew/opt/nvm/nvm.sh"  # This loads nvm
@@ -134,9 +134,41 @@ HISTFILE=~/.zsh_history
 alias z=fz
 alias le='exa -alx  --color always'
 
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/usr/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/usr/etc/profile.d/conda.sh" ]; then
+        . "/usr/etc/profile.d/conda.sh"
+    else
+        export PATH="/usr/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/shae/Apps/cloud/google-cloud-sdk/path.zsh.inc' ]; then . '/home/shae/Apps/cloud/google-cloud-sdk/path.zsh.inc'; fi
 
-# The next line enables shell command completion for gcloud.
-if [ -f '/home/shae/Apps/cloud/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/shae/Apps/cloud/google-cloud-sdk/completion.zsh.inc'; fi
+# >>> mamba initialize >>>
+# !! Contents within this block are managed by 'mamba init' !!
+export MAMBA_EXE='/home/shae/.local/bin/micromamba';
+export MAMBA_ROOT_PREFIX='/home/shae/micromamba';
+__mamba_setup="$("$MAMBA_EXE" shell hook --shell zsh --root-prefix "$MAMBA_ROOT_PREFIX" 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__mamba_setup"
+else
+    alias micromamba="$MAMBA_EXE"  # Fallback on help from mamba activate
+fi
+unset __mamba_setup
+# <<< mamba initialize <<<
+
+# pnpm
+export PNPM_HOME="/home/shae/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /home/shae/minio-binaries/mc mc
